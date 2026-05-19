@@ -97,6 +97,17 @@ const PROJECTS = [
     impact: '운영 중단',
     link: 'https://blog.naver.com/owners_5543',
   },
+  {
+    n: '08',
+    title: '오너스 고객정보 관리 시스템',
+    org: '오너스경영연구소',
+    year: '2024 - 운영 중',
+    tags: ['Vanilla JS', 'Firebase', 'Encryption'],
+    description:
+      '컨설팅 회사 고객정보 수집·관리 시스템. 고객 입력 폼 + 관리자·매니저 대시보드 + Firebase Functions 백엔드로 구성. 주민번호 등 민감 정보는 crypto-js로 암호화 저장.',
+    impact: '실서비스 운영 중',
+    link: 'https://owners-client.info/client/',
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
@@ -509,7 +520,7 @@ export default function Portfolio() {
           {[
             { num: '4', unit: 'YRS', label: '개발 경력' },
             { num: '4', unit: 'FIELDS', label: '기술·영업·재무·컨설팅' },
-            { num: '7+', unit: 'PROJECTS', label: '직접 운영' },
+            { num: '8+', unit: 'PROJECTS', label: '직접 운영' },
             { num: '1', unit: 'PERSON', label: '풀스택 + AI' },
           ].map((s, i) => (
             <div
