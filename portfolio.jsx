@@ -108,6 +108,28 @@ const PROJECTS = [
     impact: '실서비스 운영 중',
     link: 'https://owners-client.info/client/',
   },
+  {
+    n: '09',
+    title: '회의실 예약 시스템',
+    org: '이전 재직 조직',
+    year: '2024',
+    tags: ['Firebase', 'Web App', 'Internal Tool'],
+    description:
+      '회의실 예약·시간 관리 시스템 부재로 직원들이 직접 양해를 구하거나 고객 일정이 겹쳐 외부로 나가는 일이 잦았던 문제를 해결하기 위해 직접 개발한 사내 시스템. 사용자 예약 화면과 관리자 페이지를 분리 운영.',
+    impact: '회의실 사용 혼선 해소 · 사내 상시 운영',
+    link: 'https://meeting-room-booking-bcc9d.web.app/',
+  },
+  {
+    n: '10',
+    title: '입사 지원자 정보 관리 시스템',
+    org: '이전 재직 조직',
+    year: '2025',
+    tags: ['Next.js', 'Vercel', 'Web Crawling'],
+    description:
+      '신규 입사자 정보를 카톡·문자로 주고받던 비효율을 해소하기 위해 만든 채용 관리 페이지. 신규/경력 구분 입력, 단계별 입사 프로세스 안내, 생명보험사 시험 일정 자동 크롤링으로 지원자가 직접 일정을 선택할 수 있게 구성.',
+    impact: '총무 업무 난이도 대폭 감소 · 본사 부재 시스템을 팀 단위로 자체 구축',
+    link: 'https://owners-recruit.vercel.app/',
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
@@ -520,7 +542,7 @@ export default function Portfolio() {
           {[
             { num: '4', unit: 'YRS', label: '개발 경력' },
             { num: '4', unit: 'FIELDS', label: '기술·영업·재무·컨설팅' },
-            { num: '8+', unit: 'PROJECTS', label: '직접 운영' },
+            { num: '10+', unit: 'PROJECTS', label: '직접 운영' },
             { num: '1', unit: 'PERSON', label: '풀스택 + AI' },
           ].map((s, i) => (
             <div
